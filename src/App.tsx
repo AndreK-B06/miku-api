@@ -5,9 +5,8 @@ function App() {
   return (
     <>
       <section className="flex">
-        <h1>Miku Fetch api</h1>
         <main className="flex">
-          <h2>Fun facts about Miku:</h2>
+          <h1>Fun facts about Miku:</h1>
           <FetchApi />
         </main>
       </section>
