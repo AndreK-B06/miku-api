@@ -4,6 +4,7 @@ body {
   background-color: rgb(37, 35, 35);
   color: aliceblue;
 }
+
 h1 {
   margin: 5rem;
 }
@@ -19,9 +20,16 @@ main {
   justify-content: space-evenly;
   height: 20rem;
 }
+
 .font {
   font-size: 25px;
 }
+
+#p-fonts {
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
 #btn-facts {
   padding: 5px 10px;
   border: none;
