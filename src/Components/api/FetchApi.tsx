@@ -1,13 +1,9 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function FetchApi() {
   const [mikuFactsApi, setMikuFactsApi] = useState<string[]>([]);
   const [randomFact, setRandomFact] = useState<string>("");
 
-  function getRandomIndex(length: number): number {
-    return Math.floor(Math.random() * length);
-  }
-  console.log(mikuFactsApi);
   useEffect(() => {
     const fetchMikuFacts = async () => {
       try {
@@ -17,18 +13,28 @@ export default function FetchApi() {
         const data = await response.json();
         setMikuFactsApi(data);
         setRandomFact(data[getRandomIndex(data.length)]);
-        console.log(data);
       } catch (error) {
-        console.error("error not able to fetch data", error);
+        console.error("Error fetching data:", error);
       }
     };
 
     fetchMikuFacts();
   }, []);
 
+  function getRandomIndex(length: number): number {
+    return Math.floor(Math.random() * length);
+  }
+
+  const handleRandomQuoteClick = () => {
+    setRandomFact(mikuFactsApi[getRandomIndex(mikuFactsApi.length)]);
+  };
+
   return (
-    <div>
-      <p>{randomFact || "Loading..."}</p>
+    <div className="flex">
+      <p id="p-fonts">{randomFact || "Loading..."}</p>
+      <button id="btn-facts" onClick={handleRandomQuoteClick}>
+        Random fun fact
+      </button>
     </div>
   );
 }
