@@ -7,7 +7,7 @@ export default function FetchApi() {
   function getRandomIndex(length: number): number {
     return Math.floor(Math.random() * length);
   }
-
+  console.log(mikuFactsApi);
   useEffect(() => {
     const fetchMikuFacts = async () => {
       try {
