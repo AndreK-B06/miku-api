@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(37, 35, 35);
-  color: aliceblue;
+  background-color: #252323;
+  color: #f0f8ff;
 }
 
 h1 {
@@ -34,6 +34,6 @@ main {
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
-  background-color: rgb(33, 206, 253);
+  background-color: #21cefd;
   margin: auto;
 }
