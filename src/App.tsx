@@ -1,5 +1,6 @@
 import "./App.css";
 import FetchApi from "./Components/api/FetchApi";
+import FetchTimeLine from "./Components/api/FetchTimeLine";
 
 function App() {
   return (
@@ -9,6 +10,9 @@ function App() {
           <h1>Fun facts about Miku:</h1>
           <FetchApi />
         </main>
+        <section>
+          <FetchTimeLine />
+        </section>
       </section>
     </>
   );
