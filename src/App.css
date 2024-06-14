@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #252323;
-  color: #f0f8ff;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 h1 {
@@ -34,6 +34,6 @@ main {
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
-  background-color: #21cefd;
+  background-color: var(--btn-colors);
   margin: auto;
 }
