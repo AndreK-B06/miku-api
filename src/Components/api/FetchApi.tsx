@@ -30,7 +30,7 @@ export default function FetchApi() {
   };
 
   return (
-    <div className="flex">
+    <div className="flex-column">
       <p id="p-fonts">{randomFact || "Loading..."}</p>
       <button id="btn-facts" onClick={handleRandomQuoteClick}>
         Random fun fact
