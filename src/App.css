@@ -13,12 +13,17 @@ main {
   max-width: 50%;
 }
 
-.flex {
+.flex-column {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   height: 30rem;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .font {
