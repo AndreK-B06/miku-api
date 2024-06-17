@@ -1,0 +1,20 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+img {
+  max-height: 20rem;
+  max-width: 20rem;
+}
+p {
+  font-size: 2rem;
+}
+#vocaloids-cont {
+  height: 35rem;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+  padding: 3rem;
+  border: 1px solid white;
+}
