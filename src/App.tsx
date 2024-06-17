@@ -10,7 +10,7 @@ function App() {
           <h1>Fun facts about Miku:</h1>
           <FetchApi />
         </main>
-        <section>
+        <section className="flex">
           <FetchTimeLine />
         </section>
       </section>
