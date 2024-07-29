@@ -14,10 +14,6 @@ function App() {
         <section className="flex-colum">
           <FetchVocaloids />
         </section>
-        {/* Tamproary coment out code for esier work */}
-        {/* <section className="flex-column">
-          <FetchTimeLine />
-        </section> */}
       </section>
     </>
   );
