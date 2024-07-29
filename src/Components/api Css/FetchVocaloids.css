@@ -10,7 +10,7 @@ img {
 p {
   font-size: 2rem;
 }
-#vocaloids-cont {
+.vocaloids-cont {
   height: 35rem;
   justify-content: center;
   align-items: center;
