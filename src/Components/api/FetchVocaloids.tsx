@@ -32,7 +32,7 @@ export default function FetchVocaloids() {
   return (
     <div className="flex-row">
       {vocaloids.map((item, index) => (
-        <div key={index} className="flex-column vocaloids">
+        <div key={index} className="flex-column vocaloids-cont">
           <p>{item.name}</p>
           <img src={item.image} alt={item.name} />
           <p>{item.codename}</p>
