@@ -35,8 +35,8 @@ export default function FetchVocaloids() {
         <div key={index} className="flex-column vocaloids-cont">
           <p>{item.name}</p>
           <img src={item.image} alt={item.name} />
-          <p>{item.codename}</p>
-          <p>{item.introduction}</p>
+          <p>Codename: {item.codename}</p>
+          <p>Introduction: {item.introduction}</p>
           <p>{item.Version}</p>
         </div>
       ))}
